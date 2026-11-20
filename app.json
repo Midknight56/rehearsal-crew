@@ -1,0 +1,21 @@
+{
+  "name": "rehearsal-crew",
+  "version": "0.1.0",
+  "displayName": "Rehearsal what if",
+  "description": "A Crew agent that answers what if questions about queues by running the real Rehearsal simulation engine with paired runs and reporting the measured numbers.",
+  "author": "Adrian Ferguson",
+  "license": "MIT",
+  "minKiroCrewVersion": "0.12.2",
+  "tags": ["simulation", "queues", "staffing", "mcp"],
+  "agents": ["agents/rehearsal-whatif.json"],
+  "skills": ["skills/rehearsal-whatif"],
+  "mcpServers": {
+    "rehearsal-engine": {
+      "command": "node",
+      "args": ["-e", "const fs=require('fs'),os=require('os'),path=require('path'),url=require('url');const home=process.env.KIROCREW_HOME||path.join(os.homedir(),'.kiro','crew');const file=path.join(home,'apps','rehearsal-crew','dist','server.mjs');if(!fs.existsSync(file)){process.stderr.write('rehearsal-crew: missing '+file+'. Run npm install and npm run build in the app folder.\\n');process.exit(1)}import(url.pathToFileURL(file).href)"]
+    }
+  },
+  "dependencies": {
+    "commands": ["node"]
+  }
+}

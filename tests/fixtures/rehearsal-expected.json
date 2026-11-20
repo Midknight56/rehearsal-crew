@@ -1,0 +1,670 @@
+{
+  "label": "Regression snapshot of the accepted engine at R1, replication 0; not hand-calculated",
+  "modelVersion": "0.1.0",
+  "generatedOn": "2026-11-17",
+  "scenarios": {
+    "baseline": {
+      "scenarioHash": "ecb84997f5f087c117d7cc4eb620586a3efc8c7cc44d337c685f70091d069c4d",
+      "completion": "complete",
+      "unfinished": [],
+      "metrics": {
+        "horizonMs": 2400000,
+        "admitted": 120,
+        "completedByClosing": {
+          "value": 120,
+          "unit": "count",
+          "population": "admitted",
+          "n": 120,
+          "conditioned": false,
+          "note": null
+        },
+        "activeAtClosing": {
+          "total": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "walking": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "waiting": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "inService": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "queueWait": {
+          "total": {
+            "value": 44784061,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "mean": {
+            "value": 373200.50833333336,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "p95": {
+            "value": 651127,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "journeyTime": {
+          "mean": {
+            "value": 429942.4166666667,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "p95": {
+            "value": 706387,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "walkingTime": {
+          "mean": {
+            "value": 31667,
+            "unit": "ms",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "queues": {
+          "averageLength": {
+            "value": 18.660025416666667,
+            "unit": "people",
+            "population": "closingWindow",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "maxLength": {
+            "value": 45,
+            "unit": "people",
+            "population": "closingWindow",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "stations": [
+          {
+            "id": "checkin",
+            "servers": 1,
+            "busyMs": {
+              "value": 1820253,
+              "unit": "ms",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "utilization": {
+              "value": 0.75843875,
+              "unit": "ratio",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "averageQueueLength": {
+              "value": 18.660025416666667,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "maxQueueLength": {
+              "value": 45,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "served": {
+              "value": 120,
+              "unit": "count",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            }
+          },
+          {
+            "id": "packs",
+            "servers": 2,
+            "busyMs": {
+              "value": 1188736,
+              "unit": "ms",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "utilization": {
+              "value": 0.24765333333333334,
+              "unit": "ratio",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "averageQueueLength": {
+              "value": 0,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "maxQueueLength": {
+              "value": 0,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "served": {
+              "value": 120,
+              "unit": "count",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            }
+          }
+        ],
+        "staffHours": {
+          "value": 2,
+          "unit": "hours",
+          "population": "closingWindow",
+          "n": 120,
+          "conditioned": false,
+          "note": null
+        }
+      }
+    },
+    "plus-one-checkin": {
+      "scenarioHash": "0374be6bd3f84037fb0d509a793bd21566dfae5400b1e9a80aada8dc0134cbf2",
+      "completion": "complete",
+      "unfinished": [],
+      "metrics": {
+        "horizonMs": 2400000,
+        "admitted": 120,
+        "completedByClosing": {
+          "value": 120,
+          "unit": "count",
+          "population": "admitted",
+          "n": 120,
+          "conditioned": false,
+          "note": null
+        },
+        "activeAtClosing": {
+          "total": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "walking": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "waiting": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "inService": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "queueWait": {
+          "total": {
+            "value": 1344650,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "mean": {
+            "value": 11205.416666666666,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "p95": {
+            "value": 42076,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "journeyTime": {
+          "mean": {
+            "value": 67947.325,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "p95": {
+            "value": 100512,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "walkingTime": {
+          "mean": {
+            "value": 31667,
+            "unit": "ms",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "queues": {
+          "averageLength": {
+            "value": 0.5602708333333334,
+            "unit": "people",
+            "population": "closingWindow",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "maxLength": {
+            "value": 8,
+            "unit": "people",
+            "population": "closingWindow",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "stations": [
+          {
+            "id": "checkin",
+            "servers": 2,
+            "busyMs": {
+              "value": 1820253,
+              "unit": "ms",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "utilization": {
+              "value": 0.379219375,
+              "unit": "ratio",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "averageQueueLength": {
+              "value": 0.5577825,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "maxQueueLength": {
+              "value": 8,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "served": {
+              "value": 120,
+              "unit": "count",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            }
+          },
+          {
+            "id": "packs",
+            "servers": 2,
+            "busyMs": {
+              "value": 1188736,
+              "unit": "ms",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "utilization": {
+              "value": 0.24765333333333334,
+              "unit": "ratio",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "averageQueueLength": {
+              "value": 0.0024883333333333333,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "maxQueueLength": {
+              "value": 1,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "served": {
+              "value": 120,
+              "unit": "count",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            }
+          }
+        ],
+        "staffHours": {
+          "value": 2.6666666666666665,
+          "unit": "hours",
+          "population": "closingWindow",
+          "n": 120,
+          "conditioned": false,
+          "note": null
+        }
+      }
+    },
+    "shorter-route": {
+      "scenarioHash": "78268202cb01b5c450a2468cdcfa2fb24ca0e13f0579423a607f5405feea6651",
+      "completion": "complete",
+      "unfinished": [],
+      "metrics": {
+        "horizonMs": 2400000,
+        "admitted": 120,
+        "completedByClosing": {
+          "value": 120,
+          "unit": "count",
+          "population": "admitted",
+          "n": 120,
+          "conditioned": false,
+          "note": null
+        },
+        "activeAtClosing": {
+          "total": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "walking": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "waiting": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "inService": {
+            "value": 0,
+            "unit": "people",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "queueWait": {
+          "total": {
+            "value": 44784061,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "mean": {
+            "value": 373200.50833333336,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "p95": {
+            "value": 651127,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "journeyTime": {
+          "mean": {
+            "value": 413276.4166666667,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "p95": {
+            "value": 689721,
+            "unit": "ms",
+            "population": "completedJourney",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "walkingTime": {
+          "mean": {
+            "value": 15001,
+            "unit": "ms",
+            "population": "admitted",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "queues": {
+          "averageLength": {
+            "value": 18.660025416666667,
+            "unit": "people",
+            "population": "closingWindow",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          },
+          "maxLength": {
+            "value": 45,
+            "unit": "people",
+            "population": "closingWindow",
+            "n": 120,
+            "conditioned": false,
+            "note": null
+          }
+        },
+        "stations": [
+          {
+            "id": "checkin",
+            "servers": 1,
+            "busyMs": {
+              "value": 1820253,
+              "unit": "ms",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "utilization": {
+              "value": 0.75843875,
+              "unit": "ratio",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "averageQueueLength": {
+              "value": 18.660025416666667,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "maxQueueLength": {
+              "value": 45,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "served": {
+              "value": 120,
+              "unit": "count",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            }
+          },
+          {
+            "id": "packs",
+            "servers": 2,
+            "busyMs": {
+              "value": 1188736,
+              "unit": "ms",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "utilization": {
+              "value": 0.24765333333333334,
+              "unit": "ratio",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "averageQueueLength": {
+              "value": 0,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "maxQueueLength": {
+              "value": 0,
+              "unit": "people",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            },
+            "served": {
+              "value": 120,
+              "unit": "count",
+              "population": "closingWindow",
+              "n": 120,
+              "conditioned": false,
+              "note": null
+            }
+          }
+        ],
+        "staffHours": {
+          "value": 2,
+          "unit": "hours",
+          "population": "closingWindow",
+          "n": 120,
+          "conditioned": false,
+          "note": null
+        }
+      }
+    }
+  }
+}
